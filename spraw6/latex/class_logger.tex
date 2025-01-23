@@ -1,0 +1,96 @@
+\doxysection{Logger Class Reference}
+\label{class_logger}\index{Logger@{Logger}}
+
+
+Klasa odpowiedzialna za logowanie ró¿nych typów informacji do plików.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ log\+Data} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Loguje podane dane do pliku tekstowego. \end{DoxyCompactList}\item 
+void \textbf{ log\+Error} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Loguje komunikaty b³êdów do pliku tekstowego. \end{DoxyCompactList}\item 
+void \textbf{ log\+Summary} (int valid\+Count, int invalid\+Count)
+\begin{DoxyCompactList}\small\item\em Loguje podsumowanie danych do pliku tekstowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za logowanie ró¿nych typów informacji do plików. 
+
+\doxysubsection{Member Function Documentation}
+\index{Logger@{Logger}!logData@{logData}}
+\index{logData@{logData}!Logger@{Logger}}
+\doxysubsubsection{logData()}
+{\footnotesize\ttfamily \label{class_logger_ae800f586afc0ea4c1acb4cd9894ea034} 
+void Logger\+::log\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Loguje podane dane do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Wiadomoœæ do zapisania w pliku logowania.\\
+\hline
+\end{DoxyParams}
+Tworzy nowy plik o nazwie zawieraj¹cej aktualny czas i zapisuje do niego wiadomoœæ. 
+\begin{DoxyParams}{Parameters}
+{\em message} & Wiadomoœæ do zapisania w pliku logowania. \\
+\hline
+\end{DoxyParams}
+\index{Logger@{Logger}!logError@{logError}}
+\index{logError@{logError}!Logger@{Logger}}
+\doxysubsubsection{logError()}
+{\footnotesize\ttfamily \label{class_logger_a00cc5c454a6af6300e5457ae277897d9} 
+void Logger\+::log\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Loguje komunikaty b³êdów do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Wiadomoœæ o b³êdzie do zapisania w pliku.\\
+\hline
+\end{DoxyParams}
+Tworzy nowy plik o nazwie zawieraj¹cej aktualny czas i zapisuje do niego wiadomoœæ o b³êdzie. 
+\begin{DoxyParams}{Parameters}
+{\em message} & Wiadomoœæ o b³êdzie do zapisania w pliku. \\
+\hline
+\end{DoxyParams}
+\index{Logger@{Logger}!logSummary@{logSummary}}
+\index{logSummary@{logSummary}!Logger@{Logger}}
+\doxysubsubsection{logSummary()}
+{\footnotesize\ttfamily \label{class_logger_afe2fa263fd6d06346b873a0302f48e5c} 
+void Logger\+::log\+Summary (\begin{DoxyParamCaption}\item[{int}]{valid\+Count}{, }\item[{int}]{invalid\+Count}{}\end{DoxyParamCaption})}
+
+
+
+Loguje podsumowanie danych do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valid\+Count} & Liczba poprawnych rekordów. \\
+\hline
+{\em invalid\+Count} & Liczba b³êdnych rekordów.\\
+\hline
+\end{DoxyParams}
+Tworzy nowy plik o nazwie zawieraj¹cej aktualny czas i zapisuje do niego liczbê poprawnych i b³êdnych rekordów. 
+\begin{DoxyParams}{Parameters}
+{\em valid\+Count} & Liczba poprawnych rekordów. \\
+\hline
+{\em invalid\+Count} & Liczba b³êdnych rekordów. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Logger.\+h}\item 
+\textbf{ Logger.\+cpp}\end{DoxyCompactItemize}

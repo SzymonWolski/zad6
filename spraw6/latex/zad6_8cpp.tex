@@ -1,0 +1,46 @@
+\doxysection{zad6.\+cpp File Reference}
+\label{zad6_8cpp}\index{zad6.cpp@{zad6.cpp}}
+
+
+Główny plik programu odpowiedzialny za obsługę procesu wczytywania danych z pliku CSV oraz interakcji użytkownika.  
+
+
+{\ttfamily \#include "{}CSVLoader.\+h"{}}\newline
+{\ttfamily \#include "{}Tree.\+h"{}}\newline
+{\ttfamily \#include "{}Logger.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ main} ()
+\begin{DoxyCompactList}\small\item\em Główna funkcja programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Główny plik programu odpowiedzialny za obsługę procesu wczytywania danych z pliku CSV oraz interakcji użytkownika. 
+
+Zawiera główną funkcję programu, która inicjalizuje strukturę drzewa i loggera, a następnie pozwala użytkownikowi wczytać dane z pliku CSV. 
+
+\doxysubsection{Function Documentation}
+\index{zad6.cpp@{zad6.cpp}!main@{main}}
+\index{main@{main}!zad6.cpp@{zad6.cpp}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily \label{zad6_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Główna funkcja programu. 
+
+Funkcja główna inicjalizuje obiekty \doxyref{Tree}{p.}{class_tree} oraz \doxyref{Logger}{p.}{class_logger}, pobiera ścieżkę pliku CSV od użytkownika i wywołuje funkcję wczytującą dane z tego pliku do struktury drzewa. Po zakończeniu informuje użytkownika o zakończeniu procesu wczytywania danych.
+
+\begin{DoxyReturn}{Returns}
+Zwraca 0 po poprawnym zakończeniu działania programu. 
+\end{DoxyReturn}
+$<$ Struktura drzewa, do której wczytywane są dane z pliku CSV.
+
+$<$ \doxyref{Logger}{p.}{class_logger} odpowiedzialny za zapisywanie logów działania programu.
+
+$<$ Ścieżka do pliku CSV podana przez użytkownika.
+
+$<$ Wczytanie danych z pliku CSV do drzewa.

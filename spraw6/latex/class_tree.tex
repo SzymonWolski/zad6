@@ -1,0 +1,83 @@
+\doxysection{Tree Class Reference}
+\label{class_tree}\index{Tree@{Tree}}
+
+
+Drzewo hierarchiczne przechowuj¹ce rekordy na podstawie daty.  
+
+
+
+
+{\ttfamily \#include $<$Tree.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_tree_ad376a7c639d857312f5de2ef47482f68} 
+{\bfseries Tree} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizuj¹cy korzeñ drzewa. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Destruktor usuwaj¹cy drzewo. \end{DoxyCompactList}\item 
+void \textbf{ insert\+Record} (\textbf{ Record} $\ast$record)
+\begin{DoxyCompactList}\small\item\em Wstawia rekord do drzewa w odpowiednie miejsce na podstawie daty. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Record} $\ast$ $>$ \textbf{ query} (const std\+::string \&start, const std\+::string \&end)
+\begin{DoxyCompactList}\small\item\em Wyszukuje rekordy w zadanym przedziale dat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Drzewo hierarchiczne przechowuj¹ce rekordy na podstawie daty. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{Tree@{Tree}!````~Tree@{$\sim$Tree}}
+\index{````~Tree@{$\sim$Tree}!Tree@{Tree}}
+\doxysubsubsection{$\sim$Tree()}
+{\footnotesize\ttfamily \label{class_tree_abdc38545cf3f588725b5d8b8075b3866} 
+Tree\+::$\sim$\+Tree (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor usuwaj¹cy drzewo. 
+
+Destruktor usuwaj¹cy drzewo i wszystkie jego wêz³y. 
+
+\doxysubsection{Member Function Documentation}
+\index{Tree@{Tree}!insertRecord@{insertRecord}}
+\index{insertRecord@{insertRecord}!Tree@{Tree}}
+\doxysubsubsection{insertRecord()}
+{\footnotesize\ttfamily \label{class_tree_aa11a2c1b551198b346c06dbb6a0b2450} 
+void Tree\+::insert\+Record (\begin{DoxyParamCaption}\item[{\textbf{ Record} $\ast$}]{record}{}\end{DoxyParamCaption})}
+
+
+
+Wstawia rekord do drzewa w odpowiednie miejsce na podstawie daty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & WskaŸnik na rekord do dodania. \\
+\hline
+\end{DoxyParams}
+\index{Tree@{Tree}!query@{query}}
+\index{query@{query}!Tree@{Tree}}
+\doxysubsubsection{query()}
+{\footnotesize\ttfamily \label{class_tree_a37000e732a646ecf4213297f64962af1} 
+std\+::vector$<$ \textbf{ Record} $\ast$ $>$ Tree\+::query (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{start}{, }\item[{const std\+::string \&}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Wyszukuje rekordy w zadanym przedziale dat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Data pocz¹tkowa (w formacie "{}\+YYYY-\/\+MM-\/\+DD"{}). \\
+\hline
+{\em end} & Data koñcowa (w formacie "{}\+YYYY-\/\+MM-\/\+DD"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wektor wskaŸników na rekordy w przedziale dat. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tree.\+h\item 
+Tree.\+cpp\end{DoxyCompactItemize}

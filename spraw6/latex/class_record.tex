@@ -1,0 +1,112 @@
+\doxysection{Record Class Reference}
+\label{class_record}\index{Record@{Record}}
+
+
+Klasa reprezentuj¹ca pojedynczy zapis danych energetycznych.  
+
+
+
+
+{\ttfamily \#include $<$Record.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Record} (const std\+::string \&\textbf{ date\+Time}, double \textbf{ auto\+Consumption}, double \textbf{ export\+Energy}, double \textbf{ import\+Energy}, double \textbf{ consumption}, double \textbf{ production})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{Record}{p.}{class_record}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Record} $\ast$ \textbf{ parse\+Record} (const std\+::string \&line, bool \&is\+Valid)
+\begin{DoxyCompactList}\small\item\em Parsuje liniê tekstu na obiekt \doxyref{Record}{p.}{class_record}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_record_a29dac9d2ab23e1fc9939446104412e0e} 
+std\+::string {\bfseries date\+Time}
+\begin{DoxyCompactList}\small\item\em Data i czas zapisu. \end{DoxyCompactList}\item 
+\label{class_record_a8bc50094d8dc934b63f4ff4edd611295} 
+double {\bfseries auto\+Consumption}
+\begin{DoxyCompactList}\small\item\em Wartoœæ auto-\/konsumpcji energii. \end{DoxyCompactList}\item 
+\label{class_record_acef89ab1c82ef88fe978314e881ed2c3} 
+double {\bfseries export\+Energy}
+\begin{DoxyCompactList}\small\item\em Iloœæ energii eksportowanej. \end{DoxyCompactList}\item 
+\label{class_record_a88278a252aa2d74a939a11b32bd69895} 
+double {\bfseries import\+Energy}
+\begin{DoxyCompactList}\small\item\em Iloœæ energii importowanej. \end{DoxyCompactList}\item 
+\label{class_record_ae2be3f6e5a2527dbcef35917ba3781af} 
+double {\bfseries consumption}
+\begin{DoxyCompactList}\small\item\em £¹czne zu¿ycie energii. \end{DoxyCompactList}\item 
+\label{class_record_a0ee4693eaaa1a36f1aa33b869e0934bf} 
+double {\bfseries production}
+\begin{DoxyCompactList}\small\item\em £¹czna produkcja energii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca pojedynczy zapis danych energetycznych. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{Record@{Record}!Record@{Record}}
+\index{Record@{Record}!Record@{Record}}
+\doxysubsubsection{Record()}
+{\footnotesize\ttfamily \label{class_record_a11f0206b745346feb1a18fe1e9fbb67b} 
+Record\+::\+Record (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date\+Time}{, }\item[{double}]{auto\+Consumption}{, }\item[{double}]{export\+Energy}{, }\item[{double}]{import\+Energy}{, }\item[{double}]{consumption}{, }\item[{double}]{production}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxyref{Record}{p.}{class_record}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date\+Time} & Data i czas. \\
+\hline
+{\em auto\+Consumption} & Auto-\/konsumpcja energii. \\
+\hline
+{\em export\+Energy} & Iloœæ eksportowanej energii. \\
+\hline
+{\em import\+Energy} & Iloœæ importowanej energii. \\
+\hline
+{\em consumption} & £¹czne zu¿ycie energii. \\
+\hline
+{\em production} & £¹czna produkcja energii. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\index{Record@{Record}!parseRecord@{parseRecord}}
+\index{parseRecord@{parseRecord}!Record@{Record}}
+\doxysubsubsection{parseRecord()}
+{\footnotesize\ttfamily \label{class_record_aa3972813edb2714a8f766b369b617d42} 
+\textbf{ Record} $\ast$ Record\+::parse\+Record (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line}{, }\item[{bool \&}]{is\+Valid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parsuje liniê tekstu na obiekt \doxyref{Record}{p.}{class_record}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linia tekstu do sparsowania. \\
+\hline
+{\em is\+Valid} & Referencja do zmiennej, która wskazuje czy parsowanie by³o udane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+WskaŸnik do nowego obiektu \doxyref{Record}{p.}{class_record}, lub nullptr jeœli parsowanie nie powiod³o siê.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linia tekstu zawieraj¹ca dane w odpowiednim formacie. \\
+\hline
+{\em is\+Valid} & Referencja do zmiennej, która wskazuje czy parsowanie by³o udane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+WskaŸnik do nowego obiektu \doxyref{Record}{p.}{class_record}, lub nullptr jeœli parsowanie nie powiod³o siê. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Record.\+h}\item 
+\textbf{ Record.\+cpp}\end{DoxyCompactItemize}

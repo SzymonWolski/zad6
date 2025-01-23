@@ -1,0 +1,60 @@
+\doxysection{CSVLoader Class Reference}
+\label{class_c_s_v_loader}\index{CSVLoader@{CSVLoader}}
+
+
+Klasa statyczna do ³adowania danych z plików CSV do struktury \doxyref{Tree}{p.}{class_tree}.  
+
+
+
+
+{\ttfamily \#include $<$CSVLoader.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ load\+CSV} (const std\+::string \&file\+Path, \textbf{ Tree} \&tree, \textbf{ Logger} \&logger)
+\begin{DoxyCompactList}\small\item\em Wczytuje dane z pliku CSV do drzewa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa statyczna do ³adowania danych z plików CSV do struktury \doxyref{Tree}{p.}{class_tree}. 
+
+\doxysubsection{Member Function Documentation}
+\index{CSVLoader@{CSVLoader}!loadCSV@{loadCSV}}
+\index{loadCSV@{loadCSV}!CSVLoader@{CSVLoader}}
+\doxysubsubsection{loadCSV()}
+{\footnotesize\ttfamily \label{class_c_s_v_loader_a08dfb9443a94e1c93ccf76447bd1f4b7} 
+void CSVLoader\+::load\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path}{, }\item[{\textbf{ Tree} \&}]{tree}{, }\item[{\textbf{ Logger} \&}]{logger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Wczytuje dane z pliku CSV do drzewa. 
+
+Wczytuje dane z pliku CSV i zapisuje je w strukturze \doxyref{Tree}{p.}{class_tree}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Œcie¿ka do pliku CSV. \\
+\hline
+{\em tree} & Referencja do obiektu klasy \doxyref{Tree}{p.}{class_tree}, gdzie dane zostan¹ wczytane. \\
+\hline
+{\em logger} & Referencja do obiektu klasy \doxyref{Logger}{p.}{class_logger}, u¿ywanego do rejestrowania zdarzeñ.\\
+\hline
+\end{DoxyParams}
+Funkcja wczytuje dane z podanego pliku CSV, pomijajÄ…c nagÅ‚Ã³wek. W przypadku poprawnych rekordÃ³w dodaje je do drzewa. Niepoprawne rekordy sÄ… rejestrowane jako bÅ‚Ä™dy w loggerze.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & ÅšcieÅ¼ka do pliku CSV. \\
+\hline
+{\em tree} & Referencja do obiektu klasy \doxyref{Tree}{p.}{class_tree}, gdzie dane zostanÄ… zapisane. \\
+\hline
+{\em logger} & Referencja do obiektu klasy \doxyref{Logger}{p.}{class_logger}, uÅ¼ywanego do rejestrowania zdarzeÅ„. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ CSVLoader.\+h}\item 
+\textbf{ CSVLoader.\+cpp}\end{DoxyCompactItemize}
